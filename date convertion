@@ -1,0 +1,20 @@
+#include<stdio.h>
+#define WEEK 7
+ 
+int main()
+{
+	printf("How many days?\n");
+	int day,days,weeks;
+	scanf("%d",&day);
+	while(day > 0)
+	{
+		weeks = day / WEEK;
+		days = day % WEEK;
+	
+	
+		printf("%d 是  %d 周 又 %d 天\n",day,weeks,days);
+		scanf("%d",&day);
+	}
+	printf("你输入的数字不符\n");
+	return 0 ;
+}
